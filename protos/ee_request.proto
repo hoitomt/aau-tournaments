@@ -1,0 +1,14 @@
+syntax = "proto3";
+package protos;
+
+option go_package = "exposure-events/v1";
+
+message ExposureEventRequest {
+    string startDate = 1 [json_name="StartDateString"];
+    string endDate = 2 [json_name="EndDateString"];
+    string gender = 3 [json_name="Gender"];
+    int32 page = 4 [json_name="Page"];
+    string inviteType = 5 [json_name="InviteType"];
+    string searchToken = 6 [json_name="SearchToken"];
+    string sportType = 7 [json_name="sportType"];
+}

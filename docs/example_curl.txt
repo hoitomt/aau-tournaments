@@ -1,0 +1,15 @@
+
+curl -XPOST \
+-H "Accept: application/json, text/javascript, */*; q=0.01" \
+-H "Accept-Encoding: gzip, deflate, br" \
+-H "Content-Type: application/json" \
+-H "X-Requested-With: XMLHttpRequest" \
+"https://basketball.exposureevents.com/youth-basketball-events" -d '{
+  "EndDateString": "12/31/2023",
+  "StartDateString": "01/01/2023",
+  "Gender": "2",
+  "InviteType": "-1",
+  "Page": 1,
+  "SearchToken": "",
+  "sportType": "1"
+}'
