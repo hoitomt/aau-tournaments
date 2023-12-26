@@ -60,19 +60,13 @@ func getPage(requestUrl string, requestPb *pb.ExposureEventTournamentListRequest
 	if err != nil {
 		log.Fatal().Msgf("Error parsing the response body. %s", err)
 	}
-	// log.Debug().Msg(string(resBody))
+	log.Debug().Msg(string(resBody))
 	tournamentListResponse := pb.ExposureEventTournamentListResponse{}
 	err = protojson.UnmarshalOptions{DiscardUnknown: true}.Unmarshal(resBody, &tournamentListResponse)
-	// err = protojson.Unmarshal(resBody, &tournamentListResponse)
 	if err != nil {
 		log.Error().Msgf("Unmarshal tournament list response error: %s", err)
 		return nil, err
 	}
 
-	// path := filepath.Join("data", "exposure_events", fmt.Sprintf("tournaments_%d.json", requestPb.Page))
-	// err = os.WriteFile(path, resBody, 0644)
-	// if err != nil {
-	// 	log.Fatal().Msgf("Error writing file. %s", err)
-	// }
 	return &tournamentListResponse, nil
 }

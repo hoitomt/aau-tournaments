@@ -18,4 +18,5 @@
     protoc -I=protos --go_out=protos protos/*.proto
     ```
 
-2. `./aau-tournaments`
+3. `./aau-tournaments`
+   - With debug `./aau-tournaments --debug`
