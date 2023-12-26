@@ -15,7 +15,7 @@
 2. Compile protobufs (If they have changed):
 
     ```
-    protoc -I=protos --go_out=protos protos/ee_request.proto
+    protoc -I=protos --go_out=protos protos/*.proto
     ```
 
 2. `./aau-tournaments`

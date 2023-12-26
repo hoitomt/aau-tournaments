@@ -1,0 +1,67 @@
+syntax = "proto3";
+package protos;
+
+option go_package = "exposure-events/v1";
+
+message ExposureEventTournamentListResponse {
+    repeated ExposureEventTournamentListDetail results = 1 [json_name="Results"];
+}
+
+message ExposureEventTournamentListDetail {
+    int32 id = 1 [json_name="Id"]; // 196894,
+    string name = 2 [json_name="Name"]; // "NRYBL",
+    int32 organization_id = 3 [json_name="OrganizationId"]; // 21437,
+    string organization_website = 4 [json_name="OrganizationWebsite"]; // "http://www.idahoprospects.com",
+    string organization_name = 5 [json_name="OrganizationName"]; // "Idaho Prospects Basketball",
+    int32 gender = 6 [json_name="Gender"]; // 0,
+    string start_date = 7 [json_name="StartDate"]; // "2023-01-02T00:00:00.000",
+    string end_date = 8 [json_name="EndDate"]; // "2023-02-15T00:00:00.000",
+    string location = 9 [json_name="Location"]; // null,
+    string street_address = 10 [json_name="StreetAddress"]; // null,
+    string extended_address = 11 [json_name="ExtendedAddress"]; // null,
+    string city = 12 [json_name="City"]; // "Laketown",
+    string state_region = 13 [json_name="StateRegion"]; // "Utah",
+    string state_region_abbr = 14 [json_name="StateRegionAbbr"]; // "UT",
+    string postal_code = 15 [json_name="PostalCode"]; // null,
+    float longitude = 16 [json_name="Longitude"]; // -111.3224256,
+    float latitude = 17 [json_name="Latitude"]; // 41.8254935,
+    int32 logo_id = 18 [json_name="LogoId"]; // null,
+    int32 organization_logo_id = 19 [json_name="OrganizationLogoId"]; // 81728,
+    string date_created = 20 [json_name="DateCreated"]; // "2022-12-06T11:02:41.250",
+    int32 marketing_state = 21 [json_name="MarketingState"]; // 2,
+    int32 event_type = 22 [json_name="EventType"]; // 1,
+    string type = 23 [json_name="Type"]; // "League",
+    int32 featured = 24 [json_name="Featured"]; // 0,
+    bool exposure_certified = 25 [json_name="ExposureCertified"]; // true,
+    string contact_name = 26 [json_name="ContactName"]; // "Matt Jolley",
+    string contact_email = 27 [json_name="ContactEmail"]; // "mjolley23@gmail.com",
+    string contact_phone = 28 [json_name="ContactPhone"]; // null,
+    int32 sport_type = 29 [json_name="SportType"]; // 1,
+    string sport_host = 30 [json_name="SportHost"]; // "basketball.exposureevents.com",
+    string sport_name = 31 [json_name="SportName"]; // "Basketball",
+    string logo = 32 [json_name="Logo"]; // "https://cdn.exposureevents.com/assets/files/png/81728?v=11097745",
+    bool enable_registration = 33 [json_name="EnableRegistration"]; // false,
+    int32 games_guaranteed = 34 [json_name="GamesGuaranteed"]; // null,
+    int32 min_cost = 35 [json_name="MinCost"]; // null,
+    int32 max_cost = 36 [json_name="MaxCost"]; // null,
+    string ability = 37 [json_name="Ability"]; // null,
+    string youth_age_grades_both = 39 [json_name="YouthAgeGradesBoth"]; // "Boys & Girls: 6th-K",
+    string date_formatted = 40 [json_name="DateFormatted"]; // "Jan 2 - Feb 15, 2023",
+    string price_formatted = 41 [json_name="PriceFormatted"]; // null,
+    bool registration_ended = 42 [json_name="RegistrationEnded"]; // true,
+    string state_region_link = 43 [json_name="StateRegionLink"]; // "https://basketball.exposureevents.com/youth-basketball-events/utah",
+    string calendar_link = 44 [json_name="CalendarLink"]; // "https://basketball.exposureevents.com/calendar/event?eventid=196894&expired=1676419200",
+    string slug = 45 [json_name="Slug"]; // "nrybl",
+    string link = 46 [json_name="Link"]; // "https://basketball.exposureevents.com/196894/nrybl",
+    string city_state = 47 [json_name="CityState"]; // "Laketown, Utah",
+    string website = 48 [json_name="Website"]; // null,
+    string registration_link = 49 [json_name="RegistrationLink"]; // "https://basketball.exposureevents.com/196894/nrybl/registration",
+    string external_registration_website = 50 [json_name="ExternalRegistrationWebsite"]; // null,
+    string external_schedule_website = 51 [json_name="ExternalScheduleWebsite"]; // null,
+    bool show_schedule = 52 [json_name="ShowSchedule"]; // true,
+    string schedule_link = 53 [json_name="ScheduleLink"]; // "https://basketball.exposureevents.com/196894/e/schedule",
+    bool is_site_url = 54 [json_name="IsSiteUrl"]; // false,
+    string college_coach_link = 55 [json_name="CollegeCoachLink"]; // null,
+    string gate_link = 56 [json_name="GateLink"]; // null,
+    string payments_link = 57 [json_name="PaymentsLink"]; // null
+}
